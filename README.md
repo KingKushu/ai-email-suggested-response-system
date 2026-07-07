@@ -1,3 +1,5 @@
+AI Email Suggested-Response System
+An end-to-end AI system that generates context-aware email replies using Retrieval-Augmented Generation (RAG) and evaluates their quality using a multi-metric evaluation framework. The project includes dataset generation, response generation, automated evaluation, and metric validation against human judgments.
 ## Repository Structure
 
 ```text
