@@ -1,0 +1,315 @@
+{
+  "overall": {
+    "n_responses": 18,
+    "mean_composite_score_0_1": 0.634,
+    "mean_composite_score_1_5": 3.538,
+    "mean_by_metric": {
+      "coverage": 0.463,
+      "relevance": 0.712,
+      "faithfulness": 1.0,
+      "tone_fit": 1.0,
+      "llm_judge": 0.2
+    },
+    "mean_composite_by_category": {
+      "billing_question": 0.811,
+      "bug_report": 0.628,
+      "cancellation_request": 0.831,
+      "complaint_feedback": 0.476,
+      "meeting_scheduling": 0.663,
+      "order_status": 0.862,
+      "refund_request": 0.639,
+      "sales_inquiry": 0.627
+    },
+    "used_real_llm_judge": false
+  },
+  "per_response": [
+    {
+      "id": "email_0017",
+      "category": "refund_request",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.803,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.666,
+      "composite_score_1_5": 3.66,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0054",
+      "category": "sales_inquiry",
+      "scores": {
+        "coverage": 0.333,
+        "relevance": 0.901,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.627,
+      "composite_score_1_5": 3.51,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0070",
+      "category": "meeting_scheduling",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.802,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.665,
+      "composite_score_1_5": 3.66,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0034",
+      "category": "bug_report",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.746,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.654,
+      "composite_score_1_5": 3.62,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0042",
+      "category": "bug_report",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 1.0,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.705,
+      "composite_score_1_5": 3.82,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0076",
+      "category": "billing_question",
+      "scores": {
+        "coverage": 1.0,
+        "relevance": 0.656,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.811,
+      "composite_score_1_5": 4.24,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0098",
+      "category": "cancellation_request",
+      "scores": {
+        "coverage": 1.0,
+        "relevance": 0.756,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.831,
+      "composite_score_1_5": 4.32,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0031",
+      "category": "bug_report",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.53,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.611,
+      "composite_score_1_5": 3.44,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0065",
+      "category": "meeting_scheduling",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.777,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.66,
+      "composite_score_1_5": 3.64,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0038",
+      "category": "bug_report",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.434,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.592,
+      "composite_score_1_5": 3.37,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0116",
+      "category": "complaint_feedback",
+      "scores": {
+        "coverage": 0.0,
+        "relevance": 0.82,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.494,
+      "composite_score_1_5": 2.98,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0033",
+      "category": "bug_report",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.376,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.58,
+      "composite_score_1_5": 3.32,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0004",
+      "category": "order_status",
+      "scores": {
+        "coverage": 1.0,
+        "relevance": 0.912,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.862,
+      "composite_score_1_5": 4.45,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0028",
+      "category": "refund_request",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.956,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.696,
+      "composite_score_1_5": 3.78,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0120",
+      "category": "complaint_feedback",
+      "scores": {
+        "coverage": 0.0,
+        "relevance": 0.82,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.494,
+      "composite_score_1_5": 2.98,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0106",
+      "category": "complaint_feedback",
+      "scores": {
+        "coverage": 0.0,
+        "relevance": 0.774,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.485,
+      "composite_score_1_5": 2.94,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0025",
+      "category": "refund_request",
+      "scores": {
+        "coverage": 0.5,
+        "relevance": 0.245,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.554,
+      "composite_score_1_5": 3.22,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    },
+    {
+      "id": "email_0112",
+      "category": "complaint_feedback",
+      "scores": {
+        "coverage": 0.0,
+        "relevance": 0.512,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      },
+      "composite_score_0_1": 0.432,
+      "composite_score_1_5": 2.73,
+      "llm_judge_rationale": "[offline mock judge - heuristic word overlap only; configure ANTHROPIC_API_KEY for real judgments]",
+      "unsupported_facts_flagged": [],
+      "used_real_llm_judge": false
+    }
+  ]
+}

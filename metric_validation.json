@@ -1,0 +1,199 @@
+{
+  "summary": {
+    "n_calibration_pairs": 13,
+    "composite_score_vs_human": {
+      "pearson_r": 0.412,
+      "spearman_rho": 0.447
+    },
+    "llm_judge_alone_vs_human": {
+      "pearson_r": -0.025,
+      "spearman_rho": 0.0
+    },
+    "used_real_llm_judge": false,
+    "interpretation": "Spearman rho > 0.7 with the composite score => the metric reliably ranks better vs worse replies the way a human does, which is the property we actually need (e.g. to decide which drafts need human review before sending). If run with the offline mock judge (used_real_llm_judge=false), correlations will be noisier because the mock judge is a crude heuristic; re-run with ANTHROPIC_API_KEY set for the real validation number to trust for decision-making."
+  },
+  "pairs": [
+    {
+      "id": "calib_000",
+      "human_score": 5,
+      "human_rationale": "Directly answers both questions (status + ship date), right tone, offers a clear next step.",
+      "auto_composite_1_5": 3.9,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 1.0,
+        "relevance": null,
+        "faithfulness": 0.5,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_001",
+      "human_score": 1,
+      "human_rationale": "Vague, doesn't state status or a ship date, no real information given.",
+      "auto_composite_1_5": 2.4,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.0,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 0.5,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_002",
+      "human_score": 3,
+      "human_rationale": "Answers status but not the ship-date question with any specificity; polite but incomplete.",
+      "auto_composite_1_5": 4.55,
+      "auto_llm_judge_1_5": 2.0,
+      "auto_scores": {
+        "coverage": 1.0,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.4
+      }
+    },
+    {
+      "id": "calib_003",
+      "human_score": 5,
+      "human_rationale": "Covers eligibility, process, and timeline; empathetic and specific.",
+      "auto_composite_1_5": 2.77,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.5,
+        "relevance": null,
+        "faithfulness": 0.25,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_004",
+      "human_score": 2,
+      "human_rationale": "Doesn't confirm eligibility or timeline; adds a new ask without explaining why, feels evasive.",
+      "auto_composite_1_5": 3.02,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.5,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 0.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_005",
+      "human_score": 5,
+      "human_rationale": "All three questions (pricing, discount, SSO) answered precisely, with a helpful offer.",
+      "auto_composite_1_5": 2.82,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.667,
+        "relevance": null,
+        "faithfulness": 0.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_006",
+      "human_score": 1,
+      "human_rationale": "Answers none of the three specific questions asked; pure filler.",
+      "auto_composite_1_5": 2.15,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.0,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 0.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_007",
+      "human_score": 5,
+      "human_rationale": "Apologizes, takes ownership, gives a concrete next step and a direct contact.",
+      "auto_composite_1_5": 2.65,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.0,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_008",
+      "human_score": 2,
+      "human_rationale": "Generic apology, doesn't acknowledge the specific complaint or offer any resolution.",
+      "auto_composite_1_5": 2.15,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.0,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 0.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_009",
+      "human_score": 5,
+      "human_rationale": "Confirms both things asked: cancellation done, and no further charges.",
+      "auto_composite_1_5": 4.4,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 1.0,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_010",
+      "human_score": 1,
+      "human_rationale": "Never actually confirms the cancellation or billing question \u2014 the two things asked.",
+      "auto_composite_1_5": 2.15,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.0,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 0.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_011",
+      "human_score": 5,
+      "human_rationale": "Proposes a specific day/time and confirms topic implicitly via the invite offer.",
+      "auto_composite_1_5": 2.52,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.5,
+        "relevance": null,
+        "faithfulness": 0.0,
+        "tone_fit": 1.0,
+        "llm_judge": 0.2
+      }
+    },
+    {
+      "id": "calib_012",
+      "human_score": 1,
+      "human_rationale": "No day/time proposed at all despite two options being given.",
+      "auto_composite_1_5": 3.02,
+      "auto_llm_judge_1_5": 1.0,
+      "auto_scores": {
+        "coverage": 0.5,
+        "relevance": null,
+        "faithfulness": 1.0,
+        "tone_fit": 0.0,
+        "llm_judge": 0.2
+      }
+    }
+  ]
+}
